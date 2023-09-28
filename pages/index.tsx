@@ -76,6 +76,7 @@ const BinaryList = () => {
             <Form.Item label="Enter binary string length">
               <InputNumber
                 min={1}
+                max={16}
                 value={inputLength}
                 onChange={(value) => handleInputChange(value !== null ? value : undefined, maxDuplicateOccurrences)}
                 placeholder="Enter the length of the binary string"
